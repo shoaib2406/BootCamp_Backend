@@ -13,7 +13,7 @@ const userSchema = new Schema({
   },
 
   phone: {
-    type: String,
+    type: Number,
     required: "Please Enter Phone Number",
   },
 
@@ -21,6 +21,8 @@ const userSchema = new Schema({
     type: String,
     required: "Please Enter Email",
   },
+
+  password: String,
 
   dateCreated: {
     type: Date,
